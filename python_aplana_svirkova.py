@@ -30,6 +30,7 @@ class Search(unittest.TestCase):
         self.driver.back()
         element_check = self.driver.find_element_by_xpath('(//h3)[1]/..')
         str2 = element_check.get_attribute('href')
+        print(str2)
         assert str == str2
         print("Received result is equal to the previous one")
 
